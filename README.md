@@ -6,22 +6,22 @@ A simple bit of Python code to be used in pairing interview situations.
 
 1. Fork this repo
 1. Clone to your local environment
-1. Initialise your python3 virtualenv:
+1. Build with Docker:
 
    ```shell
-   python3 -m venv .
+   docker build -t py-utcservice .
    ```
 
-1. Activate the python3 virtual env (ymmv for different shells) via:
+1. Run with Docker:
 
    ```shell
-   source ./bin/activate
+   docker run -p 8080:8080 py-utcservice
    ```
 
-1. Install (to the virtual env) with:
+1. Poke it:
 
    ```shell
-   cd src && python3 setup.py install
+   curl 'localhost:8080/?date=2018-10-20'
    ```
 
 ## Tasks
