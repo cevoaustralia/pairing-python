@@ -18,8 +18,11 @@ A simple bit of Python code to be used in pairing interview situations.
    source ./bin/activate
    ```
 
-1. The code is in `src` -- the rest of the directories (`bin`, `include`,
-   `lib`) are for the virtualenv.
+1. Install (to the virtual env) with:
+
+   ```shell
+   cd src && python3 setup.py install
+   ```
 
 ## Tasks
 
